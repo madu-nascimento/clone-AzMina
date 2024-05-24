@@ -1,0 +1,34 @@
+header {
+  background-color: white;
+}
+nav {
+  background: linear-gradient(
+    to right,
+    #9b30ff,
+    #ff69b4
+  ); /* Lilás mesclado com rosa */
+}
+
+.first-horizontal-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.first-horizontal-bar li {
+  float: left;
+}
+
+.first-horizontal-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.first-horizontal-bar li a:hover {
+  background-color: #ddd; /* Cor de fundo ao passar o mouse */
+  color: black;
+}
