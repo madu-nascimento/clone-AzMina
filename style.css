@@ -1,3 +1,37 @@
 body {
-  background-color: pink;
+  background-color: white;
+}
+
+nav {
+  background: linear-gradient(
+    to right,
+    #9b30ff,
+    #ff69b4
+  ); /* Lilás mesclado com rosa */
+  overflow: hidden; /* Adicionado para esconder o conteúdo que estiver fora da barra */
+}
+
+.first-horizontal-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap; /* Evita quebrar a linha */
+}
+
+.first-horizontal-bar li {
+  display: inline-block; /* Muda para inline-block para que os itens fiquem em uma única linha */
+}
+
+.first-horizontal-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.first-horizontal-bar li a:hover {
+  background-color: #ddd; /* Cor de fundo ao passar o mouse */
+  color: black;
 }
