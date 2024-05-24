@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: white; /* Define a cor de fundo do corpo como branco */
 }
 
 nav {
@@ -9,6 +9,9 @@ nav {
     #ff69b4
   ); /* Lilás mesclado com rosa */
   overflow: hidden; /* Adicionado para esconder o conteúdo que estiver fora da barra */
+  width: 100%; /* Definindo a largura para ocupar toda a largura da página */
+  position: fixed; /* Fixa a barra de menu no topo da página */
+  top: 0; /* Alinha a barra de menu no topo da página */
 }
 
 .first-horizontal-bar {
