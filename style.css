@@ -25,11 +25,13 @@
 .first-horizontal-bar li a {
   display: block;
   color: white;
-  text-align: center;
-  padding: 14px 16px;
+  text-align: left; /* Alinha o texto à esquerda */
   text-decoration: none;
-  padding: 2px 8px;
+  padding: 2px 8px; /* Define padding uniforme */
   font-size: 14px;
+  box-sizing: border-box;
+  margin-left: 5px; /* Define a unidade 'px' */
+  align-items: center;
 }
 
 .first-horizontal-bar li a:hover {
@@ -43,6 +45,12 @@ h1 {
 
 .menu-editorias {
   background: linear-gradient(to right, #5c76dd, #ff808a);
+  position: fixed;
+  top: 40 px;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px; /* Aumentar a altura da barra */
   display: flex;
   justify-content: space-between; /* Alterado para separar o logo e o formulário de busca */
   align-items: center;
@@ -52,8 +60,12 @@ h1 {
   width: 100%;
   box-sizing: border-box;
   position: fixed;
-  top: 40px;
+  top: 32px;
   z-index: 999;
+}
+
+.logo {
+  height: 35px; /* Ajuste a altura conforme necessário */
 }
 
 .menu-editorias li {
