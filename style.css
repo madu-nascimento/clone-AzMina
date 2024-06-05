@@ -128,7 +128,6 @@ h1 {
 }
 
 .bloco-um h2 {
-  clear: both; /* Limpa os floats */
   width: 100%; /* Define a largura dos blocos */
   margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
   margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
@@ -137,30 +136,31 @@ h1 {
   padding: 24px;
 }
 
-.bloco-dois {
-  clear: both; /* Limpa os floats */
-  width: 100%; /* Define a largura dos blocos */
-  margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
-  margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
-  scroll-margin-top: 96px;
-  top: 300px;
-}
-
-.bloco-tres {
-  clear: both; /* Limpa os floats */
-  width: 100%; /* Define a largura dos blocos */
-  margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
-  margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
-  scroll-margin-top: 96px;
-  top: 300px;
-}
-
-.linha-fina {
-  border-bottom: 1px solid #000; /* Adiciona a linha fina */
-  margin-bottom: 5px; /* Espaçamento abaixo da linha fina */
+.linha-um {
+  border-bottom: 0px solid #000; /* Adiciona a linha fina */
+  margin-bottom: 10px; /* Adiciona espaço abaixo da linha fina */
   margin-left: 750px;
+  display: flex; /* Altera o layout para flexível */
 }
 
-.texto-abaixo {
-  font-size: 14px;
+.texto-abaixo-um {
+  margin: 0; /* Remove as margens padrão */
+  font-size: 14px; /* Tamanho da fonte */
+  display: block;
+}
+
+.bloco-dois h2 {
+  width: 100%; /* Define a largura dos blocos */
+  margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
+  margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
+  scroll-margin-top: 96px;
+  top: 300px;
+}
+
+.bloco-tres h2 {
+  width: 100%; /* Define a largura dos blocos */
+  margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
+  margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
+  scroll-margin-top: 96px;
+  top: 300px;
 }
