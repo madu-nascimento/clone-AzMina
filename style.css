@@ -1,29 +1,25 @@
-body {
-  background-color: white; /* Define a cor de fundo do corpo como branco */
-}
-
-nav {
+/* Estilo para o menu horizontal principal */
+.first-horizontal-bar {
   background: linear-gradient(
     to right,
-    #9b30ff,
-    #ff69b4
+    #5c76dd,
+    #ff808a
   ); /* Lilás mesclado com rosa */
-  overflow: hidden; /* Adicionado para esconder o conteúdo que estiver fora da barra */
-  width: 100%; /* Definindo a largura para ocupar toda a largura da página */
-  position: fixed; /* Fixa a barra de menu no topo da página */
-  top: 0; /* Alinha a barra de menu no topo da página */
-}
-
-.first-horizontal-bar {
-  list-style-type: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0; /* Aumentar a altura da barra */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap; /* Evita quebrar a linha */
+  z-index: 1000; /* Garantir que a barra esteja acima de outros elementos */
 }
 
 .first-horizontal-bar li {
-  display: inline-block; /* Muda para inline-block para que os itens fiquem em uma única linha */
+  margin: 0 10px;
 }
 
 .first-horizontal-bar li a {
@@ -32,9 +28,114 @@ nav {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  padding: 2px 8px;
+  font-size: 14px;
 }
 
 .first-horizontal-bar li a:hover {
-  background-color: #ddd; /* Cor de fundo ao passar o mouse */
+  background-color: #ebfa65;
   color: black;
+}
+
+h1 {
+  display: none;
+}
+
+.menu-editorias {
+  background: linear-gradient(to right, #5c76dd, #ff808a);
+  display: flex;
+  justify-content: space-between; /* Alterado para separar o logo e o formulário de busca */
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 40px;
+  z-index: 999;
+}
+
+.menu-editorias li {
+  margin: 0 10px;
+}
+
+.menu-editorias li a {
+  color: white;
+  text-decoration: none;
+  padding: 2px 8px;
+  font-size: 14px;
+}
+
+.menu-editorias li a:hover {
+  background-color: #ebfa65;
+  color: black;
+}
+
+.menu-editorias .logo {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.menu-editorias .search-form form {
+  display: flex;
+  align-items: center;
+}
+
+.menu-editorias .search-form input[type="search"] {
+  padding: 3px;
+  font-size: 14px;
+  margin-right: 10px; /* Adicionado espaço entre o input e os itens do menu */
+}
+
+.fotao-esquerda {
+  width: 300px; /* Defina a largura desejada para o quadrado */
+  height: 300px; /* Defina a altura desejada para o quadrado (igual à largura para criar um quadrado) */
+  background-color: #5c76dd; /* Cor de fundo do quadrado */
+  position: absolute; /* Posiciona o quadrado em relação ao seu contêiner pai */
+  left: 10px; /* Distância da borda esquerda do contêiner pai */
+  top: 300px; /* Distância do topo do contêiner pai */
+  z-index: 1; /* Z-index para garantir que o quadrado fique abaixo de outros elementos */
+}
+
+.fotao-esquerda > article h2 {
+  font-size: 15px;
+}
+
+.fotao-esquerda > article .linha {
+  /* Adicione estilos específicos para a div com a classe "linha" dentro de article */
+}
+
+.fotao-esquerda > article .texto-abaixo {
+  font-size: 14px;
+}
+
+.fotao-esquerda > article .leia-mais {
+  /* Adicione estilos específicos para a div com a classe "leia-mais" dentro de article */
+}
+
+.bloco-um h2,
+.bloco-dois h2,
+.bloco-tres h2 {
+  font-size: 15px; /* Tamanho da fonte para os títulos */
+}
+
+.bloco-um,
+.bloco-dois,
+.bloco-tres {
+  clear: both; /* Limpa os floats */
+  width: 100%; /* Define a largura dos blocos */
+  margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
+  margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
+  scroll-margin-top: 96px;
+  top: 300px;
+}
+.linha-fina {
+  border-bottom: 1px solid #000; /* Adiciona a linha fina */
+  margin-bottom: 5px; /* Espaçamento abaixo da linha fina */
+  margin-left: 750px;
+}
+
+.texto-abaixo {
+  font-size: 14px;
 }
