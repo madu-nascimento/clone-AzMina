@@ -121,13 +121,8 @@ h1 {
   font-size: 15px;
 }
 
-.bloco-um h2,
-.bloco-dois h2,
-.bloco-tres h2 {
-  font-size: 15px; /* Tamanho da fonte para os títulos */
-}
-
 .bloco-um h2 {
+  font-size: 15px;
   width: 100%; /* Define a largura dos blocos */
   margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
   margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
@@ -141,6 +136,7 @@ h1 {
   margin-bottom: 10px; /* Adiciona espaço abaixo da linha fina */
   margin-left: 750px;
   display: flex; /* Altera o layout para flexível */
+  vertical-align: baseline;
 }
 
 .texto-abaixo-um {
@@ -150,6 +146,7 @@ h1 {
 }
 
 .bloco-dois h2 {
+  font-size: 15px;
   width: 100%; /* Define a largura dos blocos */
   margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
   margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
@@ -158,6 +155,7 @@ h1 {
 }
 
 .bloco-tres h2 {
+  font-size: 15px;
   width: 100%; /* Define a largura dos blocos */
   margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
   margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
