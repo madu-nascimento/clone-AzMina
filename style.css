@@ -1,8 +1,7 @@
-/* Estilo para o menu horizontal principal */
 body {
   overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
   margin: 0; /* Remove margens padrão */
-  padding: 0; /* Remove preenchimentos padrão */
+  padding: 0; /* Remove paddings padrão */
 }
 
 .first-horizontal-bar {
@@ -107,11 +106,11 @@ h1 {
   height: 594.95px; /* Defina a altura desejada para o quadrado (igual à largura para criar um quadrado) */
   background-color: #5c76dd; /* Cor de fundo do quadrado */
   position: absolute; /* Posiciona o quadrado em relação ao seu contêiner pai */
-  left: 10px; /* Distância da borda esquerda do contêiner pai */
-  top: 140px; /* Distância do topo do contêiner pai */
+  left: 12px; /* Distância da borda esquerda do contêiner pai */
+  top: 135px; /* Distância do topo do contêiner pai */
   z-index: 1; /* Z-index para garantir que o quadrado fique abaixo de outros elementos */
   margin: 0px 15px 30px;
-  padding: 24px;
+  padding: 20px;
   scroll-margin-top: 96px;
 }
 
@@ -121,44 +120,39 @@ h1 {
   font-size: 15px;
 }
 
-.bloco-um h2 {
-  font-size: 15px;
-  width: 100%; /* Define a largura dos blocos */
-  margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
-  margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
-  scroll-margin-top: 96px;
-  top: 300px;
-  padding: 24px;
+.container {
+  width: 600px; /* ajuste a largura conforme necessário */
+  margin: 0 auto; /* centralizar horizontalmente */
+  box-sizing: border-box;
+  position: relative; /* Para garantir que o z-index funcione */
+  z-index: 2; /* Garante que o container esteja acima do quadrado azul */
+  display: flex; /* Alterado para usar flexbox */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  min-width: 400px; /* Definindo uma largura mínima */
+  float: right;
+  margin-left: 20px;
 }
 
-.linha-um {
-  border-bottom: 0px solid #000; /* Adiciona a linha fina */
-  margin-bottom: 10px; /* Adiciona espaço abaixo da linha fina */
-  margin-left: 750px;
-  display: flex; /* Altera o layout para flexível */
-  vertical-align: baseline;
+.container article {
+  margin-bottom: 20px;
 }
 
-.texto-abaixo-um {
-  margin: 0; /* Remove as margens padrão */
-  font-size: 14px; /* Tamanho da fonte */
-  display: block;
+.container h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
-.bloco-dois h2 {
-  font-size: 15px;
-  width: 100%; /* Define a largura dos blocos */
-  margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
-  margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
-  scroll-margin-top: 96px;
-  top: 300px;
+.container p {
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 
-.bloco-tres h2 {
-  font-size: 15px;
-  width: 100%; /* Define a largura dos blocos */
-  margin-left: 750px; /* Margem à esquerda para o espaço das linhas finas */
-  margin-bottom: 20px; /* Espaçamento abaixo de cada bloco */
-  scroll-margin-top: 96px;
-  top: 300px;
+.container .linha-estetica {
+  border-bottom: 1px solid #000; /* cor da linha */
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
