@@ -4,6 +4,9 @@ body {
   padding: 0; /* Remove paddings padrão */
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
 .first-horizontal-bar {
   background: linear-gradient(
     to right,
@@ -38,6 +41,10 @@ body {
   box-sizing: border-box;
   margin-left: 5px; /* Define a unidade 'px' */
   align-items: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .first-horizontal-bar li a:hover {
@@ -55,7 +62,7 @@ h1 {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 10px 20px; /* Aumentar a altura da barra */
+  padding: 6px 12px; /* Aumentar a altura da barra */
   display: flex;
   justify-content: space-between; /* Alterado para separar o logo e o formulário de busca */
   align-items: center;
@@ -63,6 +70,9 @@ h1 {
   margin: 0;
   top: 32px;
   z-index: 999;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .logo {
@@ -102,35 +112,80 @@ h1 {
 }
 
 .fotao-esquerda {
-  width: 579px; /* Defina a largura desejada para o quadrado */
-  height: 594.95px; /* Defina a altura desejada para o quadrado (igual à largura para criar um quadrado) */
+  width: 580px; /* Defina a largura desejada para o quadrado */
+  height: 560px; /* Defina a altura desejada para o quadrado (igual à largura para criar um quadrado) */
   background-color: #5c76dd; /* Cor de fundo do quadrado */
-  position: absolute; /* Posiciona o quadrado em relação ao seu contêiner pai */
+  position: relative; /* Posiciona o quadrado em relação ao seu contêiner pai */
   left: 12px; /* Distância da borda esquerda do contêiner pai */
-  top: 135px; /* Distância do topo do contêiner pai */
+  top: 22px; /* Distância do topo da página/contêiner pai */
   z-index: 1; /* Z-index para garantir que o quadrado fique abaixo de outros elementos */
   margin: 0px 15px 30px;
-  padding: 20px;
+  padding: 24px;
   scroll-margin-top: 96px;
 }
 
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%; /* Ajuste conforme necessário */
+  height: 300px !important; /* Mantém a proporção da imagem */
+  position: relative;
+  right: -48px; /* Ajuste conforme necessário */
+  top: -10px; /* Ajuste conforme necessário */
+}
+
 .fotao-esquerda > article h2 {
-  padding: 24px; /* Adiciona padding interno */
+  width: 800px;
+  height: 78px;
+  padding: 100px; /* Adiciona padding interno */
   box-sizing: border-box; /* Inclui padding no tamanho total do elemento */
-  font-size: 15px;
+  margin-top: 70px; /* Desloca o título para cima */
+  font-family: "Merriweather", serif;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+  text-align: left; /* Centraliza o texto dentro do elemento */
+  margin-left: -35px; /* Garante que o elemento ocupe toda a largura disponível */
+}
+
+.fotao-esquerda p {
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+  margin-top: -200px; /* Ajuste o valor negativo para mover o texto para cima */
+}
+
+.fotao-esquerda .leia-mais {
+  margin-top: 90px; /* Ajuste a margem superior conforme necessário */
+}
+
+.fotao-esquerda button {
+  border-radius: 7px; /* Valor do raio das bordas */
+  background-color: transparent; /* Remova o preenchimento de fundo */
+  color: #def279;
+  border: 1px solid #def279; /* Espessura da borda de 2 pixels e cor vermelha */
 }
 
 .container {
   width: 600px; /* ajuste a largura conforme necessário */
-  margin: 0 auto; /* centralizar horizontalmente */
+  top: -610px; /* Adiciona uma margem superior de 50 pixels */ /* centralizar horizontalmente */
   box-sizing: border-box;
   position: relative; /* Para garantir que o z-index funcione */
   z-index: 2; /* Garante que o container esteja acima do quadrado azul */
   display: flex; /* Alterado para usar flexbox */
   align-items: flex-start; /* Alinha os itens ao topo */
   min-width: 400px; /* Definindo uma largura mínima */
-  float: right;
-  margin-left: 20px;
+  left: 750px;
+  margin-left: 5px;
 }
 
 .container article {
@@ -138,18 +193,132 @@ h1 {
 }
 
 .container h2 {
-  font-size: 26px;
+  width: 580px;
+  height: 80px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
+  padding-bottom: 0.75rem;
+  font-size: 28px;
+  font-weight: bolder;
+  font-style: normal;
+  color: #1e2546;
   margin-bottom: 10px;
 }
 
 .container p {
+  font-family: "Merriweather", sans-serif;
   font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
 .container .linha-estetica {
-  border-bottom: 1px solid #000; /* cor da linha */
+  width: 98%; /* Ou qualquer valor desejado */
+  border-bottom: 1px solid #998d96; /* cor da linha */
   margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-dois {
+  width: 600px;
+  position: relative; /* Alterado: position relative para position absolute */
+  left: 750px; /* Adicionado: define a posição à esquerda */
+  top: -630px; /* Mantido se desejar o deslocamento vertical */
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  min-width: 400px;
+}
+
+.container-dois article {
+  margin-bottom: 20px;
+}
+
+.container-dois h2 {
+  width: 560px;
+  height: 50px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
+  padding-bottom: 0.75rem;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1e2546;
+  margin-bottom: 10px;
+}
+
+.container-dois p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.container-dois .linha-estetica {
+  width: 98%;
+  border-bottom: 1px solid #998d96;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-tres {
+  width: 600px;
+  position: relative; /* Alterado: position relative para position absolute */
+  left: 750px; /* Adicionado: define a posição à esquerda */
+  top: -645px; /* Mantido se desejar o deslocamento vertical */
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  min-width: 400px;
+}
+
+.container-tres article {
+  margin-bottom: 20px;
+}
+
+.container-tres h2 {
+  width: 560px;
+  height: 40px;
+  margin: 0;
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
+  padding-bottom: 0.75rem;
+  font-size: 28px;
+  font-weight: bolder;
+  font-style: normal;
+  color: #1e2546;
+  margin-bottom: 10px;
+}
+
+.container-tres p {
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.container-tres .linha-estetica {
+  position: absolute;
+  width: calc(100% + 4px); /* Ajustando a largura com margem extra */
+  border-bottom: 1px solid #998d96;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  left: -10px; /* Ajustando a posição para a esquerda */
 }
 
 a {
