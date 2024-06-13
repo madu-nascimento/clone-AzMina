@@ -1,29 +1,26 @@
 body {
-  overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
-  margin: 0; /* Remove margens padrão */
-  padding: 0; /* Remove paddings padrão */
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  padding-top: 110px;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 
 .first-horizontal-bar {
-  background: linear-gradient(
-    to right,
-    #5c76dd,
-    #ff808a
-  ); /* Lilás mesclado com rosa */
+  background: linear-gradient(to right, #5c76dd, #ff808a);
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 5px 0; /* Aumentar a altura da barra */
+  padding: 5px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   list-style: none;
   margin: 0;
-  z-index: 1000; /* Garantir que a barra esteja acima de outros elementos */
+  z-index: 1000;
   white-space: nowrap;
 }
 
@@ -34,12 +31,12 @@ body {
 .first-horizontal-bar li a {
   display: block;
   color: white;
-  text-align: left; /* Alinha o texto à esquerda */
+  text-align: left;
   text-decoration: none;
-  padding: 2px 30px; /* Define padding uniforme */
-  font-size: 14px;
+  padding: 2px 30px;
+  font-size: 13px;
   box-sizing: border-box;
-  margin-left: 5px; /* Define a unidade 'px' */
+  margin-left: 5px;
   align-items: center;
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -48,8 +45,8 @@ body {
 }
 
 .first-horizontal-bar li a:hover {
-  background-color: #ebfa65;
-  color: black;
+  background-color: #def279;
+  color: #5c76dd;
 }
 
 h1 {
@@ -62,9 +59,9 @@ h1 {
   left: 0;
   width: 100%;
   box-sizing: border-box;
-  padding: 6px 12px; /* Aumentar a altura da barra */
+  padding: 6px 12px;
   display: flex;
-  justify-content: space-between; /* Alterado para separar o logo e o formulário de busca */
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   margin: 0;
@@ -76,7 +73,7 @@ h1 {
 }
 
 .logo {
-  height: 35px; /* Ajuste a altura conforme necessário */
+  height: 35px;
 }
 
 .menu-editorias li {
@@ -91,8 +88,8 @@ h1 {
 }
 
 .menu-editorias li a:hover {
-  background-color: #ebfa65;
-  color: black;
+  background-color: #def279;
+  color: #5c76dd;
 }
 
 .menu-editorias .logo {
@@ -108,82 +105,79 @@ h1 {
 .menu-editorias .search-form input[type="search"] {
   padding: 3px;
   font-size: 14px;
-  margin-right: 10px; /* Adicionado espaço entre o input e os itens do menu */
+  margin-right: 10px;
 }
 
 .fotao-esquerda {
-  width: 580px; /* Defina a largura desejada para o quadrado */
-  height: 560px; /* Defina a altura desejada para o quadrado (igual à largura para criar um quadrado) */
-  background-color: #5c76dd; /* Cor de fundo do quadrado */
-  position: relative; /* Posiciona o quadrado em relação ao seu contêiner pai */
-  left: 12px; /* Distância da borda esquerda do contêiner pai */
-  top: 22px; /* Distância do topo da página/contêiner pai */
-  z-index: 1; /* Z-index para garantir que o quadrado fique abaixo de outros elementos */
+  width: 580px;
+  height: 560px;
+  background-color: #5c76dd;
+  position: relative;
+  left: 12px;
+  top: 22px;
+  z-index: 1;
   margin: 0px 15px 30px;
   padding: 24px;
   scroll-margin-top: 96px;
 }
 
-.image-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+.fotao-esquerda img {
+  width: auto;
+  height: 340px;
+  object-fit: cover;
   position: relative;
-}
-
-.image-container img {
-  width: 100%; /* Ajuste conforme necessário */
-  height: 300px !important; /* Mantém a proporção da imagem */
-  position: relative;
-  right: -48px; /* Ajuste conforme necessário */
-  top: -10px; /* Ajuste conforme necessário */
+  right: -10px;
+  top: 3px;
 }
 
 .fotao-esquerda > article h2 {
   width: 800px;
   height: 78px;
-  padding: 100px; /* Adiciona padding interno */
-  box-sizing: border-box; /* Inclui padding no tamanho total do elemento */
-  margin-top: 70px; /* Desloca o título para cima */
+  padding: 100px;
+  box-sizing: border-box;
+  margin-top: -80px;
   font-family: "Merriweather", serif;
   font-size: 28px;
   font-weight: bold;
   font-style: normal;
   color: #ffffff;
-  text-align: left; /* Centraliza o texto dentro do elemento */
-  margin-left: -35px; /* Garante que o elemento ocupe toda a largura disponível */
+  text-align: left;
+  margin-left: -90px;
 }
 
 .fotao-esquerda p {
   font-family: "Lato", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
   font-style: normal;
   margin-bottom: 10px;
-  margin-top: -200px; /* Ajuste o valor negativo para mover o texto para cima */
+  margin-top: -85px;
+  text-align: left;
+  margin-left: 10px;
 }
 
 .fotao-esquerda .leia-mais {
-  margin-top: 90px; /* Ajuste a margem superior conforme necessário */
+  margin-top: 50px;
+  margin-left: 10px;
 }
 
 .fotao-esquerda button {
-  border-radius: 7px; /* Valor do raio das bordas */
-  background-color: transparent; /* Remova o preenchimento de fundo */
+  border-radius: 7px;
+  background-color: transparent;
   color: #def279;
-  border: 1px solid #def279; /* Espessura da borda de 2 pixels e cor vermelha */
+  border: 1px solid #def279;
 }
 
 .container {
-  width: 600px; /* ajuste a largura conforme necessário */
-  top: -610px; /* Adiciona uma margem superior de 50 pixels */ /* centralizar horizontalmente */
+  width: 600px;
+  top: -610px;
   box-sizing: border-box;
-  position: relative; /* Para garantir que o z-index funcione */
-  z-index: 2; /* Garante que o container esteja acima do quadrado azul */
-  display: flex; /* Alterado para usar flexbox */
-  align-items: flex-start; /* Alinha os itens ao topo */
-  min-width: 400px; /* Definindo uma largura mínima */
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  min-width: 400px;
   left: 750px;
   margin-left: 5px;
 }
@@ -197,13 +191,13 @@ h1 {
   height: 80px;
   margin: 0;
   font-family: "Merriweather", serif;
-  line-height: 1.5;
+  line-height: 1.3;
   padding-bottom: 0.75rem;
   font-size: 28px;
   font-weight: bolder;
   font-style: normal;
   color: #1e2546;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .container p {
@@ -211,14 +205,15 @@ h1 {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: -20px;
+  margin-top: -5px;
 }
 
 .container .linha-estetica {
-  width: 98%; /* Ou qualquer valor desejado */
-  border-bottom: 1px solid #998d96; /* cor da linha */
+  width: 98%;
+  border-bottom: 1px solid #998d96;
   margin-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 a {
@@ -228,9 +223,9 @@ a {
 
 .container-dois {
   width: 600px;
-  position: relative; /* Alterado: position relative para position absolute */
-  left: 750px; /* Adicionado: define a posição à esquerda */
-  top: -630px; /* Mantido se desejar o deslocamento vertical */
+  position: relative;
+  left: 750px;
+  top: -620px;
   z-index: 2;
   display: flex;
   align-items: flex-start;
@@ -246,13 +241,13 @@ a {
   height: 50px;
   margin: 0;
   font-family: "Merriweather", serif;
-  line-height: 1.5;
+  line-height: 1.1;
   padding-bottom: 0.75rem;
   font-size: 32px;
   font-weight: bold;
   font-style: normal;
   color: #1e2546;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .container-dois p {
@@ -261,6 +256,7 @@ a {
   line-height: 1.5;
   font-weight: 400;
   margin-bottom: 10px;
+  margin-top: 25px;
 }
 
 .container-dois .linha-estetica {
@@ -277,9 +273,9 @@ a {
 
 .container-tres {
   width: 600px;
-  position: relative; /* Alterado: position relative para position absolute */
-  left: 750px; /* Adicionado: define a posição à esquerda */
-  top: -645px; /* Mantido se desejar o deslocamento vertical */
+  position: relative;
+  left: 750px;
+  top: -645px;
   z-index: 2;
   display: flex;
   align-items: flex-start;
@@ -291,17 +287,18 @@ a {
 }
 
 .container-tres h2 {
-  width: 560px;
-  height: 40px;
-  margin: 0;
+  width: 580px;
+  height: 50px;
+  margin: 10px 0 0;
   font-family: "Merriweather", serif;
-  line-height: 1.5;
+  line-height: 1.2;
   padding-bottom: 0.75rem;
   font-size: 28px;
   font-weight: bolder;
   font-style: normal;
   color: #1e2546;
   margin-bottom: 10px;
+  word-break: normal;
 }
 
 .container-tres p {
@@ -310,15 +307,16 @@ a {
   line-height: 1.5;
   font-weight: 400;
   margin-bottom: 10px;
+  margin-top: 25px;
 }
 
 .container-tres .linha-estetica {
   position: absolute;
-  width: calc(100% + 4px); /* Ajustando a largura com margem extra */
+  width: calc(100% + 4px);
   border-bottom: 1px solid #998d96;
   margin-bottom: 20px;
   margin-top: 20px;
-  left: -10px; /* Ajustando a posição para a esquerda */
+  left: -10px;
 }
 
 a {
